@@ -17,22 +17,6 @@ entered. A legal value is any integer.
 
 """
 
-def get_user_input():
-
-    output = ""
-
-    input_is_an_integer = False
-
-    while not input_is_an_integer:
-            output = raw_input("Number of sides: ")
-        # get input
-            if output.isdigit() or (output [0] == "-" and output[1:].isdigit()):
-                output = int(output)
-                input_is_an_integer = True
-            else:
-                print("That is not an integer.")
-
-    return output
 
 def name_that_shape():
     """
@@ -75,6 +59,25 @@ def name_that_shape():
         print("decagon")
     else:
         print("Error")
+
+def get_user_input():
+
+    output = ""
+
+    input_is_an_integer = False
+
+    while not input_is_an_integer:
+            output = raw_input("Number of sides: ")
+        # get input
+            if output.isdigit() or (output [0] == "-" and output[1:].isdigit()):
+                output = int(output)
+                input_is_an_integer = True
+            else:
+                print("That is not an integer.")
+
+    return output
+
+
 
 #name_that_shape()
 
